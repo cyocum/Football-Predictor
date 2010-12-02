@@ -26,8 +26,4 @@ let print_predictions pred scores =
       let pred_str = string_of_float pred in
         print_endline (home_str ^ " - " ^ away_str ^ " --> " ^ pred_str)
 
-let _ =
-  let range = BatList.of_enum (BatEnum.range 0 ~until:5) in 
-  let scores = cartesian_product range range in
-  let predictions = BatList.map run_prediction scores in  
-    BatList.iter2 print_predictions predictions scores
+
