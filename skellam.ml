@@ -36,4 +36,7 @@ let print_predictions preds =
   in
     List.iter print_pred preds 
   
-  (*let find_max_prediction*) 
+let find_max_prediction preds =
+  let max = ref {home_score=0; away_score=0; prediction=0.} in
+    List.iter (fun x -> if x.prediction >= !max.prediction then max := x) preds;
+    !max 
