@@ -1,8 +1,4 @@
 let _ =
-  let range = BatList.of_enum (BatEnum.range 0 ~until:5) in 
-  let scores = Skellam.cartesian_product range range in
-  let predictions = BatList.map Skellam.run_prediction scores in  
-  let max_pred = Skellam.find_max_prediction predictions in       
-    Skellam.print_predictions predictions;
-    print_endline "";
-    Skellam.print_predictions [max_pred]
+  let spreads = [1; 0; -1; 2; -2; 3; -3] in
+  let preds = BatList.map (fun x -> Skellam.run_prediction x) spreads in
+    BatList.iter2 Skellam.print_prediction spreads preds
