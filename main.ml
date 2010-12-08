@@ -1,7 +1,7 @@
 let _ =
-  let wins = [1;2;3;4;5] in
-  let draw = [0] in
-  let lose = [-1;-2;-3;-4;-5] in 
+  let wins = Football.wins in
+  let draw = Football.draw in
+  let lose = Football.lose in
   let wins_percent_lst = BatList.map Football.run_prediction wins in
   let draw_percent_lst = BatList.map Football.run_prediction draw in
   let lose_precent_lst = BatList.map Football.run_prediction lose in
