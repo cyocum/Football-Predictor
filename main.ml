@@ -6,6 +6,7 @@ let calc = function
     let win_percent = Football.calc_outcome Football.Win home_gpg away_gpg in
     let draw_percent = Football.calc_outcome Football.Draw home_gpg away_gpg in
     let lose_percent = Football.calc_outcome Football.Lose home_gpg away_gpg in
+      print_endline (home_name ^ " - " ^ away_name);
       print_endline ("win --> " ^ (string_of_float win_percent));
       print_endline ("draw --> " ^ (string_of_float draw_percent));
       print_endline ("lose --> " ^ (string_of_float lose_percent))
@@ -18,6 +19,5 @@ let create_tuples = function
 
 
 let _ =
-  let prediction_lst = Array.to_list (Array.map (fun x -> create_tuples x)
-  predictions) in 
+  let prediction_lst = Array.to_list (Array.map create_tuples predictions) in 
     List.iter calc prediction_lst
