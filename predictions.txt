@@ -47,22 +47,22 @@ Date         Home           Away           Prediction       Outcome
 18 Dec 2010  Portsmouth     Scunthorpe     Portsmouth 
 18 Dec 2010  SheffUtd       Swansea        Swansea 
 18 Dec 2010  Watford        Preston        Watford
-18 Dec 2010  Ipswich        Leicester       
-18 Dec 2010  Hamilton       Celtic
-18 Dec 2010  Aberdeen       Motherwell
-18 Dec 2010  Hearts         Inverness
-18 Dec 2010  Kilmarnock     Hibernian
-18 Dec 2010  Rangers        StMirren
-18 Dec 2010  StJohnstone    DundeeUtd
-18 Dec 2010  Lens           Caen
-18 Dec 2010  Montpellier    Auxerre
-18 Dec 2010  Nice           Brest
-18 Dec 2010  Rennes         Valenciennes
-18 Dec 2010  StEtienne      Arles
-18 Dec 2010  Toulouse       Lorient
-18 Dec 2010  ParisSG        Monaco
-19 Dec 2010  WestBrom       Wolverhampton
-19 Dec 2010  Blackpool      Tottenham
-19 Dec 2010  Chelsea        ManUtd
-20 Dec 2010  ManCity        Everton
+18 Dec 2010  Ipswich        Leicester      Leicester 
+18 Dec 2010  Hamilton       Celtic         Celtic
+18 Dec 2010  Aberdeen       Motherwell     Aberdeen
+18 Dec 2010  Hearts         Inverness      Inverness
+18 Dec 2010  Kilmarnock     Hibernian      Kilmarnock
+18 Dec 2010  Rangers        StMirren       Rangers
+18 Dec 2010  StJohnstone    DundeeUtd      DundeeUtd
+18 Dec 2010  Lens           Caen           Draw
+18 Dec 2010  Montpellier    Auxerre        Auxerre
+18 Dec 2010  Nice           Brest          Nice
+18 Dec 2010  Rennes         Valenciennes   Rennes
+18 Dec 2010  StEtienne      Arles          StEtienne
+18 Dec 2010  Toulouse       Lorient        Draw 
+18 Dec 2010  ParisSG        Monaco         ParisSG
+19 Dec 2010  WestBrom       Wolverhampton  WestBrom
+19 Dec 2010  Blackpool      Tottenham      Blackpool
+19 Dec 2010  Chelsea        ManUtd         Chelsea
+20 Dec 2010  ManCity        Everton        Draw
 
