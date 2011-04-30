@@ -1,5 +1,22 @@
-let input_file_name = Sys.argv.(1)
-let predictions = Csv.to_array (Csv.load input_file_name)
+open Arg
+
+type cli_args =  {
+  mutable input_file_name : string;
+  mutable home_gpg : float;
+  mutable away_gpg : float;
+}
+
+let arguments = { input_file_name = "";
+		  home_gpg = 0.;
+		  away_gpg = 0.
+		}
+
+let args = [("-filename", String((fun s -> arguments.input_file_name <- s)), "file name of matches");
+	    ("-home_gpg", Float((fun x -> arguments.home_gpg <- x)), "home goals per game");
+	    ("-away_gpg", Float((fun x -> arguments.away_gpg <- x)), "away goals perl game")
+	   ]
+
+let load_predictions file_name = Csv.to_array (Csv.load file_name)
 
 let calc = function
   (home_name, away_name, home_gpg, away_gpg) ->
@@ -19,5 +36,10 @@ let create_tuples = function
 
 
 let _ =
-  let prediction_lst = Array.to_list (Array.map create_tuples predictions) in 
-    List.iter calc prediction_lst
+  Arg.parse args (fun _ -> ()) "blah";
+  match arguments.input_file_name with
+    | "" -> calc ("Home", "Away", arguments.home_gpg, arguments.away_gpg)
+    | _ -> 
+      let predictions = load_predictions arguments.input_file_name in
+      let prediction_lst = Array.to_list (Array.map create_tuples predictions) in 
+        List.iter calc prediction_lst
