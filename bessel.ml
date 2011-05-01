@@ -16,5 +16,3 @@ let run_mod_bessel a x =
   let range = (BatList.of_enum (BatEnum.range 0 ~until:50)) in
   let ans_list = BatList.map (fun m -> mod_bessel m a x) range in
     List.fold_left (+.) 0. ans_list
-
-
